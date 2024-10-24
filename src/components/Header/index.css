@@ -1,0 +1,74 @@
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  nav {
+    width: 170%;
+  }
+  .header-container {
+    display: flex;
+  }
+}
+.header-container {
+  background-color: #304766;
+  font-family: 'Roboto';
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo-home {
+  font-family: 'Caveat';
+  font-size: 32px;
+  font-weight: 700;
+}
+.nav-bars {
+  display: flex;
+}
+.nav-btn {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logout-btn {
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px 24px 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .mobile {
+    display: block;
+    box-shadow: 0px 7px 32px 0px #0000000d;
+    border-top: 1px solid #d0d9e6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .larger {
+    display: none;
+  }
+  .nav-bars-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icon {
+    background: none;
+
+    border: none;
+  }
+  .icon-size {
+    height: 40px;
+    width: 40px;
+  }
+}

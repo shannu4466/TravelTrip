@@ -1,0 +1,440 @@
+.step-ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 10px;
+}
+
+.stepdetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.default-step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  color: black;
+}
+
+.current-step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  color: white;
+}
+
+.step-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.step-text {
+  margin-left: 10px;
+}
+
+.completed-step .step-text {
+  color: black;
+}
+
+.current-step .step-text {
+  color: #2563eb;
+}
+
+.future-step .step-text {
+  color: black;
+}
+
+/*  */
+
+.booktrip-container {
+  height: 100vh;
+}
+
+.stepdetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.booktrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.step {
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.step-ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.steplist-left-part {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.booking-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  height: 579px;
+  width: 1035px;
+  text-align: start;
+  margin-top: 5px;
+  display: flex;
+}
+.steplist-right-part {
+  background-color: #304766;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userdetails-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  color: black;
+  height: auto;
+  width: 448px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.input-fields {
+  display: flex;
+  position: relative;
+  width: 352px;
+}
+
+.input-box {
+  border-color: #cbd5e1;
+  padding-left: 10px;
+}
+
+.error-icon {
+  position: absolute;
+  right: 4px;
+  height: 25px;
+  width: 25px;
+  color: red;
+  margin-top: 7px;
+}
+
+.input-box.true {
+  border-color: red;
+}
+
+.next-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  outline: none;
+  width: 56px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.number {
+  font-weight: bold;
+  font-size: 30px;
+}
+.prev-btn {
+  background-color: #dbeafe;
+  color: #2563eb;
+  border: none;
+  outline: none;
+  width: 65px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.btns {
+  display: flex;
+  margin-top: 20px;
+}
+.guest-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.line {
+  height: 2px;
+  width: 400px;
+  color: #e7e7e7;
+  background-color: #e7e7e7;
+  outline: none;
+  border: none;
+}
+.guest-inc-or-dec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+.increase {
+  background: none;
+  border: 1px solid #e7e7e7;
+  border-width: 2px;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.type-of-guest {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+.assist {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.confirm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.confirm-card {
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  padding: 50px;
+  min-width: 500px;
+}
+
+.confirm-unorder-list-item {
+  padding-left: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.confirm-list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.confirm-span-head {
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px;
+  width: 70%;
+}
+
+.confirm-span {
+  width: 30%;
+  margin: 0;
+  text-align: left;
+  font-size: 17px;
+}
+
+ol {
+  counter-reset: list-counter;
+}
+
+.error {
+  margin-top: -15px;
+  color: red;
+}
+
+.confirm-btn {
+  background-color: #2563eb;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+.booking-confirm-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-image {
+  height: 50px;
+  width: 50px;
+}
+
+.mobile-bars {
+  display: none;
+}
+.confirm-info {
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 576px) {
+  .userdetails-card {
+    box-shadow: none;
+    background-color: none;
+    color: black;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .steplist-left-part {
+    display: none;
+  }
+  .steplist-right-part {
+    background: none;
+    font-family: 'Roboto';
+  }
+  .booking-card {
+    box-shadow: none;
+    height: 579px;
+    width: 300px;
+    text-align: start;
+    margin-top: 5px;
+    display: flex;
+  }
+  .text {
+    color: black;
+  }
+  .info {
+    color: #304766;
+    margin-top: 15%;
+  }
+
+  .input-box {
+    width: 250px;
+  }
+  .input-fields {
+    display: flex;
+    position: relative;
+    width: 250px;
+  }
+  .error-icon {
+    position: absolute;
+  }
+  .booktrip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .confirm-card {
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .increase {
+    background: none;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border-width: 2px;
+    border: 1px solid #e7e7e7;
+  }
+  .number {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .confirm-card {
+    color: black;
+    padding: 20px;
+  }
+  .booktrip-container {
+    height: 100vh;
+  }
+
+  .confirm-list-item {
+    width: 100%;
+  }
+  .confirm-span-head {
+    font-size: 15px;
+    width: 50%;
+  }
+  .line {
+    width: 280px;
+  }
+  .confirm-span {
+    font-size: 12px;
+    width: 50%;
+  }
+
+  .mobile-bars {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    display: flex;
+    top: 48px;
+    left: 0;
+  }
+  .confirm-info {
+    margin-top: -15px;
+  }
+  .bar.false {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background: #e7e7e7;
+  }
+  .bar.true {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #2563eb;
+  }
+  .btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .confirm-page-card {
+    width: 100%;
+    padding-left: -30%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .booking-card {
+    margin-left: 65%;
+  }
+}

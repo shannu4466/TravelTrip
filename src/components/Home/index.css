@@ -1,0 +1,86 @@
+.homepage {
+  height: 100vh;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Roboto';
+}
+.moto {
+  color: #304766;
+  font-size: 56px;
+  font-weight: 600;
+}
+.desc {
+  font-size: 20px;
+  color: #304766;
+}
+.booktrip-btn {
+  background-color: #304766;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 24px 12px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.page-desc {
+  width: 40%;
+}
+.page-img {
+  width: 40%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .larger-view-header {
+    display: none;
+  }
+  .page-img {
+    display: none;
+  }
+  .homepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20%;
+  }
+  .mobile-img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+  }
+  .mobile-header {
+    display: block;
+  }
+  .page-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .moto {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .desc {
+    margin-bottom: 50px;
+  }
+}

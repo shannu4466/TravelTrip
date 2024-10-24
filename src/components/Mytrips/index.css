@@ -1,0 +1,51 @@
+.my-trips {
+  font-family: 'Roboto';
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.trips-heading {
+  color: #334155;
+  font-weight: 600;
+  font-size: 25px;
+}
+.my-trips-container {
+  height: 60vh;
+}
+.empty-trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-family: 'Roboto';
+}
+
+@media screen and (max-width: 576px) {
+  .my-trips {
+    margin-left: -3%;
+    margin-right: 4%;
+  }
+  .trips-heading {
+    margin-left: 10%;
+  }
+  .my-trips-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .empty-trip {
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .my-trips-container {
+    margin-left: 60%;
+    margin-right: 0;
+  }
+}
