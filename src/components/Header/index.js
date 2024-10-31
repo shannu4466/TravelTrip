@@ -15,7 +15,9 @@ const Header = props => {
   return (
     <div>
       <nav className="header-container larger">
-        <h1 className="logo-home">Travel Trip</h1>
+        <Link to="/" className="link">
+          <h1 className="logo-home">Travel Trip</h1>
+        </Link>
         <div className="nav-bars">
           <Link to="/" className="link">
             <p className="nav-btn">Home</p>

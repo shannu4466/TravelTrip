@@ -32,6 +32,7 @@ const Home = () => (
         <img
           src="https://res.cloudinary.com/drjvxkwkq/image/upload/v1725977584/travel_jikgld.png"
           alt="homepage"
+          className="larger-homepage-img"
         />
       </div>
     </div>

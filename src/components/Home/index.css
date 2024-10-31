@@ -1,11 +1,15 @@
 .homepage {
-  height: 100vh;
+  height: 90vh;
 }
 
 .homepage-container {
   display: flex;
   justify-content: space-around;
   font-family: 'Roboto';
+  height: 100%;
+}
+.larger-homepage-img {
+  height: 90%;
 }
 .moto {
   color: #304766;

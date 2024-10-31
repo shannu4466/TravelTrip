@@ -80,14 +80,8 @@ class BookTrip extends Component {
   }
 
   renderUserDetails = () => {
-    const {
-      name,
-      stLoc,
-      endLoc,
-      nameError,
-      startLocError,
-      endLocError,
-    } = this.state
+    const {name, stLoc, endLoc, nameError, startLocError, endLocError} =
+      this.state
     return (
       <div className="text">
         <h1 className="info">Your Details</h1>
@@ -487,8 +481,20 @@ class BookTrip extends Component {
   }
 
   onClickCancelBtn = () => {
-    window.location.reload()
-    this.setState({currentStep: 5})
+    this.setState({
+      name: '',
+      stLoc: '',
+      endLoc: '',
+      startDate: '',
+      endDate: '',
+      adults: 1,
+      infants: 0,
+      children: 0,
+      isChecked: false,
+      assistanceValue: 'Car',
+      currentStep: 1,
+      bars: [true, false, false, false, false],
+    })
   }
 
   onClickNewTripBtn = () => {
@@ -543,6 +549,7 @@ class BookTrip extends Component {
             children: 0,
             isChecked: false,
             assistanceValue: 'Car',
+            currentStep: 6,
             bars: [false, false, false, false, false],
           })
         }
@@ -559,50 +566,15 @@ class BookTrip extends Component {
                 }}
               >
                 <div className="confirm-card">
-                  <ul className="confirm-unorder-list-item">
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">Name</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{name}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">Start Location</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{stLoc}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">End Location</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{endLoc}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">Start Date</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{startDate}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">End Date</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{endDate}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">Guests</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{totalGuests}
-                      </p>
-                    </li>
-                    <li className="confirm-list-item">
-                      <p className="confirm-span-head">Travel Assistance</p>
-                      <p className="confirm-span">
-                        :&nbsp;&nbsp;&nbsp;&nbsp;{assistanceValue}
-                      </p>
-                    </li>
-                  </ul>
+                  <p className="confirm-span-head">Name: {name}</p>
+                  <p className="confirm-span-head">Start Location: {stLoc}</p>
+                  <p className="confirm-span-head">End Location: {endLoc}</p>
+                  <p className="confirm-span-head">Start Date: {startDate}</p>
+                  <p className="confirm-span-head">End Date: {endDate}</p>
+                  <p className="confirm-span-head">Guests: {totalGuests}</p>
+                  <p className="confirm-span-head">
+                    Travel Assistance: {assistanceValue}
+                  </p>
                   <div className="btns">
                     <button
                       className="prev-btn"
