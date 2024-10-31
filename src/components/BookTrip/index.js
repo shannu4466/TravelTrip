@@ -32,7 +32,7 @@ class BookTrip extends Component {
     children: 0,
     infants: 0,
     isChecked: false,
-    assistanceValue: 'Car',
+    assistanceValue: 'None',
     nameError: false,
     startLocError: false,
     endLocError: false,
@@ -566,15 +566,51 @@ class BookTrip extends Component {
                 }}
               >
                 <div className="confirm-card">
-                  <p className="confirm-span-head">Name: {name}</p>
-                  <p className="confirm-span-head">Start Location: {stLoc}</p>
-                  <p className="confirm-span-head">End Location: {endLoc}</p>
-                  <p className="confirm-span-head">Start Date: {startDate}</p>
-                  <p className="confirm-span-head">End Date: {endDate}</p>
-                  <p className="confirm-span-head">Guests: {totalGuests}</p>
-                  <p className="confirm-span-head">
-                    Travel Assistance: {assistanceValue}
-                  </p>
+                  <ol className="confirm-unorder-list-item">
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">Name</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{name}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">Start Location</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{stLoc}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">End Location</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{endLoc}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">Start Date</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{startDate}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">End Date</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{endDate}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">Guests</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{totalGuests}
+                      </p>
+                    </li>
+                    <li className="confirm-list-item">
+                      <p className="confirm-span-head">Travel Assistance</p>
+                      <p className="confirm-span">
+                        :&nbsp;&nbsp;&nbsp;&nbsp;{assistanceValue}
+                      </p>
+                    </li>
+                  </ol>
+
                   <div className="btns">
                     <button
                       className="prev-btn"
